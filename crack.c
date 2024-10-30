@@ -83,8 +83,6 @@ int main(int argc, char *argv[])
     // Open the dictionary file for reading.
     FILE *file2 = fopen(argv[1],"r");
 
-    FILE *file3 = fopen("rockyou100k.txt","r");
-
     // count for how many hasehes were cracked.
     int count = 0;
 
@@ -113,7 +111,6 @@ int main(int argc, char *argv[])
     
     // Close the dictionary file.
     fclose(file2);
-    fclose(file3);
 
     // Display the number of hashes that were cracked.
     printf("%d Hashes cracked!!\n",count);
