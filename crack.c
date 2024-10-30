@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 
 
     // Open the dictionary file for reading.
-    FILE *file2 = fopen("enable1.txt","r");
+    FILE *file2 = fopen(argv[1],"r");
 
     FILE *file3 = fopen("rockyou100k.txt","r");
 
